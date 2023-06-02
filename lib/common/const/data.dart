@@ -1,0 +1,11 @@
+// ignore_for_file: constant_identifier_names
+
+import 'dart:io';
+
+const ACCESS_TOKEN_KEY = "ACCESS_TOKEN";
+const REFRESH_TOKEN_KEY = "REFRESH_TOKEN";
+final ip = Platform.isIOS == true ? simulatorIp : emulatorIp;
+final baseUrl = "http://$ip";
+
+const emulatorIp = "10.0.2.2:3000";
+const simulatorIp = "127.0.0.1:3000";
